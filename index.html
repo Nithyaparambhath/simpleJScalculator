@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        
+            <div class="calculator">
+               <div class="input">
+                <input type="text" id="result" class="input-section" placeholder="0">
+               </div>
+               
+
+            <div class="row">
+                <button onclick="display('7')" class="cal-btn">7</button>
+                <button onclick="display('8')" class="cal-btn">8</button>
+                <button onclick="display('9')" class="cal-btn">9</button>
+                <button onclick="display('*')" class="cal-btn">×</button>
+            </div>
+
+            <div class="row">
+                <button onclick="display('4')" class="cal-btn">4</button>
+                <button onclick="display('5')" class="cal-btn">5</button>
+                <button onclick="display('6')" class="cal-btn">6</button>
+                <button onclick="display('-')" class="cal-btn">&#8722;</button>
+            </div>
+
+            <div class="row">
+                <button onclick="display('1')" class="cal-btn">1</button>
+                <button onclick="display('2')" class="cal-btn">2</button>
+                <button onclick="display('3')" class="cal-btn">3</button>
+                <button onclick="display('+')" class="cal-btn">&#43;</button>
+            </div>
+
+            <div class="row">
+                <button onclick="display('0')" class="cal-btn">0</button>
+                <button onclick="allClear()" class="cal-btn">AC</button>
+                <button onclick="display('/')" class="cal-btn">/</button>
+                <button onclick="exprEval()" class="cal-btn btn-clr">&#61;</button>
+            </div>
+            <div class="row">
+                <button onclick="removeLast()" class="cal-btn">C</button>
+                
+            </div>
+            </div>
+            
+        
+    </div>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
